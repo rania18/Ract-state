@@ -1,38 +1,65 @@
+
+.list{
+  list-style-type:none;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  font-weight: lighter;
+  padding-top: 1%;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 250px;
+  background-color: #f0e4d7;
+}
+
+
+.timer{
+  display: flex;
+  justify-content: center;
+  color: rgb(42, 42, 75);
+  font-size: 40px;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #f0e4d7;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profilWrapper {
+  padding: 3rem 2rem;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ff7171;
+  box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.1);
 }
-
-.App-link {
-  color: #61dafb;
+.profilPhoto {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+h2 {
+  font-family:'Indie Flower', cursive;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f0e4d7;
+}
+.Button{
+  background-color: #ff7171;
 }
